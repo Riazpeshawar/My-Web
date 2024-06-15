@@ -1,0 +1,196 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Animation */
+@keyframes fadeInScaleUp {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+header {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    animation: fadeInScaleUp 1s ease-out;
+}
+
+header img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 1em;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+/* Section Styles */
+section {
+    padding: 2em;
+    margin: 2em 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Special Colors for Each Section */
+#projects {
+    background-color: #ff9999; /* Light Red */
+    color: #333;
+}
+
+#curricula {
+    background-color: #99ccff; /* Light Blue */
+    color: #333;
+}
+
+#websites {
+    background-color: #99ff99; /* Light Green */
+    color: #333;
+}
+
+#content {
+    background-color: #ffcc99; /* Light Orange */
+    color: #333;
+}
+
+#gallery {
+    background-color: #ffccff; /* Light Pink */
+    color: #333;
+}
+
+#achievements {
+    background-color: #ffff99; /* Light Yellow */
+    color: #333;
+}
+
+#contact {
+    background-color: #cccccc; /* Light Gray */
+    color: #333;
+}
+
+#aboutMe {
+    background-color: #99ffff; /* Light Cyan */
+    color: #333;
+}
+
+/* Text Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+h2 {
+    animation: fadeIn 2s ease-in-out;
+}
+
+p {
+    animation: slideInFromLeft 1.5s ease-out;
+}
+
+ul li a {
+    animation: slideInFromRight 1.5s ease-out;
+}
+
+/* Gallery Styles */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: white;
+}
+
+button {
+    background-color: #575757; /* Green */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    animation: fadeInScaleUp 1s ease-out;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* "About Me" Section Animation */
+#aboutMe.animate {
+    animation: fadeIn 2s ease-in-out, slideInFromLeft 1.5s ease-out;
+}
